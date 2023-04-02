@@ -1,0 +1,461 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+JP&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap');
+
+body{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/* header */
+
+header{
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+header .top{
+    height: auto;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0px;
+    background-color: white;
+}
+
+header .top a{
+    display: inline-block;
+    height: auto;
+    width: auto;
+}
+
+header .top img{
+    display: flex;
+    text-align: center;
+    height: 30px;
+    width: auto;
+    padding-left: 14px;
+}
+
+header .bottom{
+    background-color: #383838;
+}
+
+header nav{
+    max-width: 1200px;
+    margin: auto;
+    padding: 8px 14px;
+}
+
+header nav li{
+    display: inline-block;
+    padding-right: 50px;
+    font-size: 15px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: white;
+}
+
+/* main */
+
+main{
+    max-width: 1200px;
+    margin: auto;
+    padding: 150px 14px 200px 14px;
+}
+
+/* #new */
+
+#new{
+    display: flex;
+    justify-content: space-between;
+}
+
+#new .left, #new .middle, #new .right{
+    height: auto;
+    width: 30%;
+    text-align: center;
+}
+
+#new img{
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#new h4{
+    padding: 10px 0px 18px 0px;
+    text-align: start;
+}
+
+/* aのアニメーション */
+
+#new a{
+    position: relative;
+    padding-bottom: 5px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+#new a::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background: #333;
+    transition: all 200ms ease;
+}
+
+#new a:hover::after{
+    opacity: 0;
+    transform: translateY(3px);
+}
+
+/* main-wrapper */
+
+#main-article{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+#main-article a{
+    text-decoration: none;
+    color: black;
+}
+
+#main-article .readmore-wrapper{
+    text-align: center;
+}
+
+/* articleの日付とカテゴリを横並びに */
+
+#main-article .wrapper{
+    display: flex;
+    padding: 15px 0px 10px 0px;
+    font-size: 14px;
+}
+
+/* 左側の記事の幅 */
+
+#main-article .left{
+    width: 65%;
+}
+
+#main-article .left img{
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* aタグでも余白が取れるように */
+
+#main-article .date,#main-article .category{
+    display: block;
+}
+
+/* 日付とカテゴリの間を空ける */
+
+#main-article .date{
+    margin-right: 15px;
+}
+
+#main-article .first p,#main-article .second p,#main-article .third p{
+    display: inline-block;
+    padding: 15px 50px 25px 50px;
+    margin: auto;
+}
+
+/* aのアニメーション */
+
+#main-article .readmore{
+    position: relative;
+    padding-bottom: 5px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+#main-article .readmore::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background: #333;
+    transition: all 200ms ease;
+}
+
+#main-article .readmore:hover::after{
+    opacity: 0;
+    transform: translateY(3px);
+}
+
+/* 記事どうしのスペース */
+
+#main-article .second,#main-article .third{
+    margin-top: 80px;
+}
+
+/* 右側の記事（ランキングなど） */
+
+#main-article .right{
+    width: 30%;
+}
+
+.profile{
+    width: 100%;
+    text-align: center;
+}
+
+.profile img{
+    height: 135px;
+    width: 135px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: center;
+}
+
+.profile h3{
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.profile p{
+    padding: 25px 15px 0px 0px;
+    text-align: start;
+    font-size: 14px;
+}
+
+/* ranking */
+
+.ranking{
+    margin-top: 70px;
+}
+
+.ranking h3{
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.ranking img{
+    width: 100%;
+}
+
+.ranking p{
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+.ranking .middle,.ranking .bottom{
+    margin-top: 50px;
+}
+
+/* archive */
+
+.archive{
+    margin-top: 70px;
+}
+
+.archive h3{
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.archive ul{
+    border-top: 1px solid dimgray;
+}
+
+.archive li{
+    padding: 18px 0px 18px 30px;
+    border-bottom: 1px solid dimgray;
+    list-style: none;
+    font-size: 14px;
+}
+
+/* footer */
+
+footer{
+    padding: 60px 0px 20px 0px;
+    background-color: #f5f5f5;
+}
+
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+footer .about, .menu,.twitter{
+    width: 29%;
+}
+
+/* about */
+
+.about p{
+    margin-top: 35px;
+    font-size: 14px;
+}
+
+/* aboutの三角を作る？ */
+
+.about ul{
+    padding: 25px 0px 0px 0px;
+    margin: 0px;
+    font-size: 14px;
+    list-style: none;
+}
+
+.about li a{
+    text-decoration: none;
+    color: black;
+}
+
+.about ul > li {
+    position: relative;
+    margin-bottom: 5px;
+    padding: 0px 0px 0px 1em;
+}
+
+.about ul > li::before {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    width: 0px;
+    height: 0px;
+    border: 0.3em solid transparent;
+    border-left: 0.4em solid black;
+    content: "";
+}
+
+/* menu */
+
+.menu ul{
+    margin-top: 35px;
+}
+
+.menu li{
+    list-style: none;
+    padding: 14px 0px 14px 16px;
+    border-bottom: 1px solid dimgray;
+    font-size: 14px;
+}
+
+.menu li:first-child{
+    border-top: 1px solid dimgray;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: black;
+}
+
+/* twitter */
+
+.twitter .wrapper{
+    margin-top: 35px;
+}
+
+.twitter a{
+    margin-top: 35px;
+    height: 100px;
+}
+
+/* copy-right */
+
+.copy-right{
+    margin-top: 60px;
+    text-align: center;
+    font-size: 12px;
+    color: #333;
+}
+
+@media screen and (max-width:767px) {
+
+    /* header */
+
+    header nav li{
+        padding-right: 45px;
+        font-size: 13px;
+    }
+
+    header nav li:last-child{
+        padding-right: 0px;
+    }
+
+    /* new */
+
+    #new{
+        display: block;
+    }
+
+    #new .left, #new .middle{
+        margin-bottom: 50px;
+        width: 100%;
+    }
+
+    #new .right{
+        margin-bottom: 0px;
+        width: 100%;
+    }
+
+    #new img{
+        height: auto;
+    }
+
+    #new a{
+    position: relative;
+    padding-bottom: 5px;
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    }
+
+    /* main-article */
+
+    #main-article{
+        display: block;
+    }
+    
+    #main-article .left{
+        width: 100%;
+    }
+
+    #main-article .right{
+        margin-top: 100px;
+        width: 100%;
+    }
+
+    /* footer */
+
+    footer{
+        padding: 60px 14px 20px 14px;
+    }
+
+    footer .container{
+        display: block;
+    }
+
+    footer .about, .menu,.twitter{
+        width: 100%;
+    }
+
+    .about ul > li {
+        margin-bottom: 2px;
+    }
+
+    .menu, .twitter{
+        margin-top: 50px;
+    }
+
+}
